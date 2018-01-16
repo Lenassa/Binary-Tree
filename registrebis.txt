@@ -1,0 +1,12 @@
+m Camille 2007-01-15
+m Jules 2007-01-15 
+f Camille 2007-01-15 
+m Camille 1977-01-15 
+m Camille 2007-11-15 
+m Camille 2007-01-25
+1 4 0
+2 1 3
+3 0 0
+4 0 0
+5 0 2
+6 1 0

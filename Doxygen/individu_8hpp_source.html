@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Généalogie:  Fichier source de individu.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Généalogie
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">individu.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="individu_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _INDIVIDU_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _INDIVIDU_HPP_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span> <span class="comment">// pour le type std::string et ses opérations</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structIndividu.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structIndividu.html">Individu</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// Attributs</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structIndividu.html#a978281da58a84f7e4b8f3b9645cc6ec1">   21</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">char</span> <a class="code" href="structIndividu.html#a978281da58a84f7e4b8f3b9645cc6ec1">sexe</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structIndividu.html#a7475707f164b4c77439797fa83574f78">   23</a></span>&#160;    std::string <a class="code" href="structIndividu.html#a7475707f164b4c77439797fa83574f78">nom</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structIndividu.html#ace73cd4eff6f0116f8e819de056dfda5">   25</a></span>&#160;    std::string <a class="code" href="structIndividu.html#ace73cd4eff6f0116f8e819de056dfda5">date</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string <a class="code" href="structIndividu.html#a9fc53024980c891aaf1143e9917970ac">enChaine</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structIndividu.html#af5156609b87f83bbee4d2b95fc0ea91b">operator==</a>(<span class="keyword">const</span> <a class="code" href="structIndividu.html">Individu</a> &amp; ind) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structIndividu.html#a02e47fa218c11f1a48785a63057490bc">operator=</a>(<span class="keyword">const</span> <a class="code" href="structIndividu.html">Individu</a> &amp; ind);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structIndividu.html#abbaee6d9c750db3a9434d8170c6d47ba">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="structIndividu.html">Individu</a> &amp; ind) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;std::ostream &amp; <a class="code" href="individu_8hpp.html#ab5e667257325e0db5fa9ea4ebde284da">operator&lt;&lt;</a>(std::ostream &amp; os, <span class="keyword">const</span> <a class="code" href="structIndividu.html">Individu</a> &amp; anc);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//--------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">namespace </span>std</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01Individu_01_4.html">   72</a></span>&#160;    <span class="keyword">template</span>&lt;&gt; <span class="keyword">struct </span>hash&lt;<a class="code" href="structIndividu.html">Individu</a>&gt;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01Individu_01_4.html#a57d83a3d21e83b49aef64524815f1e49">   75</a></span>&#160;        <span class="keyword">typedef</span> <a class="code" href="structIndividu.html">Individu</a> <a class="code" href="structstd_1_1hash_3_01Individu_01_4.html#a57d83a3d21e83b49aef64524815f1e49">argument_type</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01Individu_01_4.html#adbd9b06a58497d4e520013a8f735e6fa">   77</a></span>&#160;        <span class="keyword">typedef</span> std::size_t <a class="code" href="structstd_1_1hash_3_01Individu_01_4.html#adbd9b06a58497d4e520013a8f735e6fa">result_type</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="structstd_1_1hash_3_01Individu_01_4.html#adbd9b06a58497d4e520013a8f735e6fa">result_type</a> operator()(<a class="code" href="structIndividu.html">argument_type</a> <span class="keyword">const</span> &amp; ind) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    };</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // _INDIVIDU_HPP_</span></div>
+<div class="ttc" id="structIndividu_html_a978281da58a84f7e4b8f3b9645cc6ec1"><div class="ttname"><a href="structIndividu.html#a978281da58a84f7e4b8f3b9645cc6ec1">Individu::sexe</a></div><div class="ttdeci">char sexe</div><div class="ttdoc">Le sexe de l&#39;individu, &#39;f&#39; ou &#39;m&#39;. </div><div class="ttdef"><b>Definition:</b> individu.hpp:21</div></div>
+<div class="ttc" id="structIndividu_html"><div class="ttname"><a href="structIndividu.html">Individu</a></div><div class="ttdoc">La classe Individu représente les informations liées à un individu. </div><div class="ttdef"><b>Definition:</b> individu.hpp:17</div></div>
+<div class="ttc" id="structIndividu_html_a02e47fa218c11f1a48785a63057490bc"><div class="ttname"><a href="structIndividu.html#a02e47fa218c11f1a48785a63057490bc">Individu::operator=</a></div><div class="ttdeci">void operator=(const Individu &amp;ind)</div><div class="ttdoc">Assignation d&#39;individu. </div><div class="ttdef"><b>Definition:</b> individu.cpp:22</div></div>
+<div class="ttc" id="structIndividu_html_abbaee6d9c750db3a9434d8170c6d47ba"><div class="ttname"><a href="structIndividu.html#abbaee6d9c750db3a9434d8170c6d47ba">Individu::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Individu &amp;ind) const </div><div class="ttdoc">Comparateur d&#39;individus pour l&#39;inégalité </div><div class="ttdef"><b>Definition:</b> individu.cpp:30</div></div>
+<div class="ttc" id="structstd_1_1hash_3_01Individu_01_4_html_a57d83a3d21e83b49aef64524815f1e49"><div class="ttname"><a href="structstd_1_1hash_3_01Individu_01_4.html#a57d83a3d21e83b49aef64524815f1e49">std::hash&lt; Individu &gt;::argument_type</a></div><div class="ttdeci">Individu argument_type</div><div class="ttdoc">Le type opérande. </div><div class="ttdef"><b>Definition:</b> individu.hpp:75</div></div>
+<div class="ttc" id="structIndividu_html_a7475707f164b4c77439797fa83574f78"><div class="ttname"><a href="structIndividu.html#a7475707f164b4c77439797fa83574f78">Individu::nom</a></div><div class="ttdeci">std::string nom</div><div class="ttdoc">Le nom de l&#39;individu, suite de lettres sans espace. </div><div class="ttdef"><b>Definition:</b> individu.hpp:23</div></div>
+<div class="ttc" id="structIndividu_html_af5156609b87f83bbee4d2b95fc0ea91b"><div class="ttname"><a href="structIndividu.html#af5156609b87f83bbee4d2b95fc0ea91b">Individu::operator==</a></div><div class="ttdeci">bool operator==(const Individu &amp;ind) const </div><div class="ttdoc">Comparateur d&#39;individus pour l&#39;égalité </div><div class="ttdef"><b>Definition:</b> individu.cpp:16</div></div>
+<div class="ttc" id="individu_8hpp_html_ab5e667257325e0db5fa9ea4ebde284da"><div class="ttname"><a href="individu_8hpp.html#ab5e667257325e0db5fa9ea4ebde284da">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Individu &amp;anc)</div><div class="ttdoc">surcharge de l&#39;opérateur d&#39;affichage << pour les Individu </div><div class="ttdef"><b>Definition:</b> individu.cpp:39</div></div>
+<div class="ttc" id="structIndividu_html_a9fc53024980c891aaf1143e9917970ac"><div class="ttname"><a href="structIndividu.html#a9fc53024980c891aaf1143e9917970ac">Individu::enChaine</a></div><div class="ttdeci">std::string enChaine() const </div><div class="ttdoc">Méthode pour affichage et hachage. </div><div class="ttdef"><b>Definition:</b> individu.cpp:10</div></div>
+<div class="ttc" id="structstd_1_1hash_3_01Individu_01_4_html_adbd9b06a58497d4e520013a8f735e6fa"><div class="ttname"><a href="structstd_1_1hash_3_01Individu_01_4.html#adbd9b06a58497d4e520013a8f735e6fa">std::hash&lt; Individu &gt;::result_type</a></div><div class="ttdeci">std::size_t result_type</div><div class="ttdoc">Le type résultat. </div><div class="ttdef"><b>Definition:</b> individu.hpp:77</div></div>
+<div class="ttc" id="structIndividu_html_ace73cd4eff6f0116f8e819de056dfda5"><div class="ttname"><a href="structIndividu.html#ace73cd4eff6f0116f8e819de056dfda5">Individu::date</a></div><div class="ttdeci">std::string date</div><div class="ttdoc">La date de naissance de l&#39;individu au format AAAA-MM-JJ. </div><div class="ttdef"><b>Definition:</b> individu.hpp:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

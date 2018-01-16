@@ -1,0 +1,16 @@
+m	Jean	2004-02-29
+m	Henri	1975-04-18
+f	France	1951-03-03
+f	Brigitte	1978-04-21
+m	Alfred	1954-08-19
+f	Anne	1953-04-28
+f	Camille	2007-01-15
+m	Jacques	1980-06-06
+f	Florence	1982-09-25
+m	René	1957-11-16
+1	2	4
+2	0	3
+4	5	6
+7	8	9
+8	5	6
+9	10	0

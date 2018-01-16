@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Généalogie:  Fichier source de ancetres.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Généalogie
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ancetres.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ancetres_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _ANCETRES_HPP_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _ANCETRES_HPP_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span> <span class="comment">// pour le type std::string</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span> <span class="comment">// pour le type std::ostream</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span> <span class="comment">// pour le type std::set</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span> <span class="comment">// pour le type std::vector</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span> <span class="comment">// pour le type std::unordered_map</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="individu_8hpp.html">individu.hpp</a>&quot;</span> <span class="comment">// pour le type Individu</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classAncetres.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAncetres.html">Ancetres</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classAncetres.html#a1107ad4370de202f2ae016226510343b">Ancetres</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classAncetres.html#a1107ad4370de202f2ae016226510343b">Ancetres</a>(std::string fic);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAncetres.html#a5d03c721b90fde674bc9f4e739ea50ab">afficher</a>(std::ostream &amp; os) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classAncetres.html#a79c5301cba8c9f1f111e3e4fc5f8e140">estPresent</a>(<span class="keyword">const</span> <a class="code" href="structIndividu.html">Individu</a> &amp; ind) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAncetres.html#a0b4c08c75bbfb26638806e324fd1b314">ajouter</a>(<span class="keyword">const</span> <a class="code" href="structIndividu.html">Individu</a> &amp; ind);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classAncetres.html#a4a5232279e6a0a7898be5ea84f830dc4">hasPere</a>(<a class="code" href="structIndividu.html">Individu</a> ind) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="structIndividu.html">Individu</a> <a class="code" href="classAncetres.html#a4f7535c5c0a4eedfa59109f1dfef4b8b">getPere</a>(<a class="code" href="structIndividu.html">Individu</a> ind) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAncetres.html#a90978d17906e80ab9fde10a673ebae31">setPere</a>(<a class="code" href="structIndividu.html">Individu</a> ind, <a class="code" href="structIndividu.html">Individu</a> pere);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classAncetres.html#aedc9a6c1323b9f47ec049e8262113165">hasMere</a>(<a class="code" href="structIndividu.html">Individu</a> ind) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="structIndividu.html">Individu</a> <a class="code" href="classAncetres.html#a43ad86a36dec304edc8afd896bf06057">getMere</a>(<a class="code" href="structIndividu.html">Individu</a> ind) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAncetres.html#ada328de6679649f8434851cf50072d0b">setMere</a>(<a class="code" href="structIndividu.html">Individu</a> ind, <a class="code" href="structIndividu.html">Individu</a> mere);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        std::set&lt;Individu&gt; <a class="code" href="classAncetres.html#a7149cd13009844e4193b5b8dfbea571c">racines</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        std::set&lt;Individu&gt; <a class="code" href="classAncetres.html#a341cc185dc230532da06089756524578">individus</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="classAncetres.html">Ancetres</a> <a class="code" href="classAncetres.html#ad7e2b10e0feafbaec241139898d14336">ancetresCommuns</a>(<a class="code" href="structIndividu.html">Individu</a> ind1, <a class="code" href="structIndividu.html">Individu</a> ind2) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAncetres.html#a41191875deb4e1701a8ca51e2c9d79b8">fusion</a>(<a class="code" href="classAncetres.html">Ancetres</a> anc);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="comment">// Un nœud de la forêt contient un individu et les indices de ses parents (-1 si inconnus)</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keyword">struct </span>Noeud {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <a class="code" href="structIndividu.html">Individu</a> ind; <span class="comment">// l&#39;individu représenté</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordtype">int</span> pere, mere; <span class="comment">// son père, sa mère</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        };</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="comment">// Attributs</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        std::vector&lt;Noeud&gt; noeuds; <span class="comment">// Le tableau des nœuds</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        std::unordered_map&lt;Individu,unsigned int&gt; indTOnd; <span class="comment">// table associative Individu-&gt;Nœud</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="comment">// Méthodes</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="comment">// EN AJOUTER AU BESOIN</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;};</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;std::ostream &amp; <a class="code" href="ancetres_8hpp.html#a6b529524c636ae3858216725562c4fae">operator&lt;&lt;</a>(std::ostream &amp; os, <span class="keyword">const</span> <a class="code" href="classAncetres.html">Ancetres</a> &amp; anc);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif // _ANCETRES_HPP_</span></div>
+<div class="ttc" id="classAncetres_html_a90978d17906e80ab9fde10a673ebae31"><div class="ttname"><a href="classAncetres.html#a90978d17906e80ab9fde10a673ebae31">Ancetres::setPere</a></div><div class="ttdeci">void setPere(Individu ind, Individu pere)</div><div class="ttdoc">Modifie le père d&#39;un individu. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:112</div></div>
+<div class="ttc" id="individu_8hpp_html"><div class="ttname"><a href="individu_8hpp.html">individu.hpp</a></div><div class="ttdoc">Définition de la classe Individu. </div></div>
+<div class="ttc" id="classAncetres_html_a1107ad4370de202f2ae016226510343b"><div class="ttname"><a href="classAncetres.html#a1107ad4370de202f2ae016226510343b">Ancetres::Ancetres</a></div><div class="ttdeci">Ancetres()</div><div class="ttdoc">Constructeur d&#39;une forêt vide. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:12</div></div>
+<div class="ttc" id="classAncetres_html_ada328de6679649f8434851cf50072d0b"><div class="ttname"><a href="classAncetres.html#ada328de6679649f8434851cf50072d0b">Ancetres::setMere</a></div><div class="ttdeci">void setMere(Individu ind, Individu mere)</div><div class="ttdoc">Modifie la mère d&#39;un individu. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:135</div></div>
+<div class="ttc" id="classAncetres_html_a41191875deb4e1701a8ca51e2c9d79b8"><div class="ttname"><a href="classAncetres.html#a41191875deb4e1701a8ca51e2c9d79b8">Ancetres::fusion</a></div><div class="ttdeci">void fusion(Ancetres anc)</div><div class="ttdoc">Fusionne l&#39;instance avec la forêt passée en paramètre. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:224</div></div>
+<div class="ttc" id="classAncetres_html_a79c5301cba8c9f1f111e3e4fc5f8e140"><div class="ttname"><a href="classAncetres.html#a79c5301cba8c9f1f111e3e4fc5f8e140">Ancetres::estPresent</a></div><div class="ttdeci">bool estPresent(const Individu &amp;ind) const </div><div class="ttdoc">Indique si un individu est présent dans la forêt. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:82</div></div>
+<div class="ttc" id="classAncetres_html_a4f7535c5c0a4eedfa59109f1dfef4b8b"><div class="ttname"><a href="classAncetres.html#a4f7535c5c0a4eedfa59109f1dfef4b8b">Ancetres::getPere</a></div><div class="ttdeci">Individu getPere(Individu ind) const </div><div class="ttdoc">Accède au père d&#39;un individu. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:104</div></div>
+<div class="ttc" id="classAncetres_html_a7149cd13009844e4193b5b8dfbea571c"><div class="ttname"><a href="classAncetres.html#a7149cd13009844e4193b5b8dfbea571c">Ancetres::racines</a></div><div class="ttdeci">std::set&lt; Individu &gt; racines() const </div><div class="ttdoc">Calcule l&#39;ensemble des individus sans enfants dans la forêt. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:141</div></div>
+<div class="ttc" id="structIndividu_html"><div class="ttname"><a href="structIndividu.html">Individu</a></div><div class="ttdoc">La classe Individu représente les informations liées à un individu. </div><div class="ttdef"><b>Definition:</b> individu.hpp:17</div></div>
+<div class="ttc" id="classAncetres_html_aedc9a6c1323b9f47ec049e8262113165"><div class="ttname"><a href="classAncetres.html#aedc9a6c1323b9f47ec049e8262113165">Ancetres::hasMere</a></div><div class="ttdeci">bool hasMere(Individu ind) const </div><div class="ttdoc">Indique si la mère d&#39;un individu est connue. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:118</div></div>
+<div class="ttc" id="classAncetres_html_a0b4c08c75bbfb26638806e324fd1b314"><div class="ttname"><a href="classAncetres.html#a0b4c08c75bbfb26638806e324fd1b314">Ancetres::ajouter</a></div><div class="ttdeci">void ajouter(const Individu &amp;ind)</div><div class="ttdoc">Ajoute un nouvel individu à la forêt des ancêtres. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:88</div></div>
+<div class="ttc" id="classAncetres_html_a43ad86a36dec304edc8afd896bf06057"><div class="ttname"><a href="classAncetres.html#a43ad86a36dec304edc8afd896bf06057">Ancetres::getMere</a></div><div class="ttdeci">Individu getMere(Individu ind) const </div><div class="ttdoc">Accède à la mère d&#39;un individu. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:127</div></div>
+<div class="ttc" id="classAncetres_html_a5d03c721b90fde674bc9f4e739ea50ab"><div class="ttname"><a href="classAncetres.html#a5d03c721b90fde674bc9f4e739ea50ab">Ancetres::afficher</a></div><div class="ttdeci">void afficher(std::ostream &amp;os) const </div><div class="ttdoc">Affiche dans un flux de sortie (fichier ou écran) </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:65</div></div>
+<div class="ttc" id="classAncetres_html_a341cc185dc230532da06089756524578"><div class="ttname"><a href="classAncetres.html#a341cc185dc230532da06089756524578">Ancetres::individus</a></div><div class="ttdeci">std::set&lt; Individu &gt; individus() const </div><div class="ttdoc">Accède à l&#39;ensemble des individus dans la forêt. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:159</div></div>
+<div class="ttc" id="classAncetres_html"><div class="ttname"><a href="classAncetres.html">Ancetres</a></div><div class="ttdoc">La classe Ancetres représente une forêt généalogique d&#39;ancêtres. </div><div class="ttdef"><b>Definition:</b> ancetres.hpp:20</div></div>
+<div class="ttc" id="classAncetres_html_ad7e2b10e0feafbaec241139898d14336"><div class="ttname"><a href="classAncetres.html#ad7e2b10e0feafbaec241139898d14336">Ancetres::ancetresCommuns</a></div><div class="ttdeci">Ancetres ancetresCommuns(Individu ind1, Individu ind2) const </div><div class="ttdoc">Calcule l&#39;ensemble des ancêtres communs à deux individus. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:169</div></div>
+<div class="ttc" id="classAncetres_html_a4a5232279e6a0a7898be5ea84f830dc4"><div class="ttname"><a href="classAncetres.html#a4a5232279e6a0a7898be5ea84f830dc4">Ancetres::hasPere</a></div><div class="ttdeci">bool hasPere(Individu ind) const </div><div class="ttdoc">Indique si le père d&#39;un individu est connu. </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:95</div></div>
+<div class="ttc" id="ancetres_8hpp_html_a6b529524c636ae3858216725562c4fae"><div class="ttname"><a href="ancetres_8hpp.html#a6b529524c636ae3858216725562c4fae">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Ancetres &amp;anc)</div><div class="ttdoc">surcharge de l&#39;opérateur d&#39;affichage << pour les Ancetres </div><div class="ttdef"><b>Definition:</b> ancetres.cpp:240</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>
